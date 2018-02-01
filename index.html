@@ -8,36 +8,199 @@
     <title>Angelo's Pizza</title>
     </head>
     <body>
-        <h1>Angelo's Italian Pizza</h1>
-            <div class="cointainer">
-                <div class="">
+            <div class="container">
+                <h1>Angelo's Italian Pizza</h1>
                     <h2>Autenthic South Italian Pizza in Seatle</h2>
-                </div>
-                <main class="container">
-                    <h3>Place an online order below</h3>
-                    <h3>We offer free delivery!</h3>
-                </main>
-                <form class="order-form">
-                    <div class="form-group">
-                      <label for="formGroupExampleInput">Name</label>
-                     <input type="text" class="form-control" id="costumerName" placeholder="What's your name?">
-                </div>
-                    <div class="form-gruop">
-                        <h4>Pizza Style</h4>
-                        <!-- The costumer chooice between Vegetarian and No vegetarian -->
-                                <div class="form-check form-check-inline">
-                                      <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
-                                      <label class="form-check-label" for="inlineRadio1">1</label>
-                                </div>
 
-                                <div class="form-check form-check-inline">
-                                      <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
-                                      <label class="form-check-label" for="inlineRadio2">2</label>
-                                </div>
+                    <main class="container">
+                        <h3>Place your online order below</h3>
+                        <h3>We offer free delivery!</h3>
+                    </main>
+                    <!--  Buttons to choose the sizes of pizza-->
+                            <form class="form-size">
+                                <div class="form-group" >
+                                    <fieldset class="form-group">
+                                        <legend>Choose your size</legend>
+                                            <!--  Small chooice-->
+                                            <div class="form-check">
+                                                  <label class="form-check-label">
+                                                    <input type="radio" class="form-check-input" name="optionsRadios" id="smallSize" value="small" checked>
+                                                    Small
+                                                  </label>
+                                            </div>
+                                            <!--  Medium chooice-->
+                                            <div class="form-check">
+                                                <label class="form-check-label">
+                                                    <input type="radio" class="form-check-input" name="optionsRadios" id="mediumSize" value="medium">
+                                                    Medium
+                                                 </label>
+                                            </div>
+                                            <!--  Large chooice-->
+                                            <div class="form-check">
+                                                <label class="form-check-label">
+                                                    <input type="radio" class="form-check-input" name="optionsRadios" id="largeSize" value="large">
+                                                    Large
+                                                </label>
+                                            </div>
+                                            <h3>Meet</h3>
+                                            <input type="checkbox" name="toppings" value="Beacon"> Beacon
+                                            <input type="checkbox" name="toppings" value="Salami"> Salami <br>
+                                            <input type="checkbox" name="toppings" value="Italian Sausage"> Italian Sausage
+                                            <input type="checkbox" name="toppings" value="Pepperoni"> Pepperoni<br>
+                                            <h3>Cheese</h3>
+                                            <input type="checkbox" name="toppings" value="Gorgonzola">Gorgonzola
+                                            <input type="checkbox" name="toppings" value="Burrata"> Burrata<br>
+                                            <input type="checkbox" name="toppings" value="Provolone">Provolone
+                                            <input type="checkbox" name="toppings" value="Parmegian"> Parmegian<br>
+                                            <h3>Veggies</h3>
+                                            <input type="checkbox" name="toppings" value="Broccoli Rappini">Broccoli Rappini
+                                            <input type="checkbox" name="toppings" value="Onions">Onions<br>
+                                            <input type="checkbox" name="toppings" value="BellPepper">BellPepper
+                                            <input type="checkbox" name="toppings" value="Olives">Olives
 
+                                    </fieldset>
+                            <button  type="submit" class="btn btn-primary">Submit</button>
+                            </form>
+                        </div>
                     </div>
-                </form>
+                        <form class="form-reload">
+                        <button type="submit" class="btn btn-lg">Add more</button>
+                        </form>
+                    </div>
+    <h5> Your Order: </h5>
+    <h6><b>Total Cost: $</b><span class="total"></span></h6>
+    <h6><b>Size:</b><span class="sizeresults"></span></h6>
+    <h6><b>Ingredients:</b><span class="toppingsresults"></span></h6>
 
-            </div>
     </body>
 </html>
+
+
+
+
+
+
+<!-- <div class="">
+    <h2>Autenthic South Italian Pizza in Seatle</h2>
+</div>
+<main class="container">
+    <h3>Place an online order below</h3>
+    <h3>We offer free delivery!</h3>
+</main>
+<form class="order-form">
+    <div class="form-group" id="costumer-name">
+      <label for="formGroupExampleInput">Name</label>
+     <input type="text" class="form-control" id="costumerName" placeholder="What's your name?">
+</div>
+<div class="new-pizzas-section">
+    <div class="new-pizza">
+        <div class="form-gruop">
+
+             The costumer chooice between Vegetarian and No vegetarian -->
+            <!-- <h4>Pizza Style:</h4> -->
+            <!-- Vegetarian button -->
+            <!-- <div class="pizza-type-input">
+                  <input  type="radio"  value="vegetarian">Vegetarian</input>
+            </div> -->
+            <!--No Vegetarian button -->
+                    <!-- <div class="form-check form-check-inline">
+                        <div class="pizza-type-input">
+                              <input  type="radio"  value="no-vegetarian">No Vegetarian</input>
+                        </div>
+                    </div><br>
+            <h4>Choose your size:</h4> -->
+            <!--  Set uo IDs-->
+                <!-- Small size button -->
+                    <!-- <div class="pizza-size-input">
+                          <input  type="radio"  value="small">Small</input>
+                    </div> -->
+                <!-- Medium size button -->
+                    <!-- <div class="pizza-size-input">
+                          <input  type="radio"  value="medium">Medium</input>
+                    </div> -->
+                 <!-- Large size button          -->
+                 <!-- <div class="pizza-size-input">
+                       <input  type="radio"  value="large">Large</input>
+                 </div><br>
+
+            <h4>Add your topping:</h4> -->
+                <!--  Checkbox for Vegetables-->
+            <!-- <div id="checkbox-vegetables">
+                <div class="form-check">
+                    <h5>Vegetables Topping</h5>
+                    <input type="checkbox" name="topping" value=""> Broccoli Rapini</input>
+                    <input type="checkbox" name="topping" value=""> Olives</input>
+                    <input type="checkbox" name="topping" value=""> Tomatoes</input><br>
+                    <input type="checkbox" name="topping" value=""> Onions</input>
+                    <input type="checkbox" name="topping" value=""> BellPepper</input>
+                    <input type="checkbox" name="topping" value=""> Artichoke</input><br>
+                    <input type="checkbox" name="topping" value=""> Spinach</input>
+                    <input type="checkbox" name="topping" value=""> Basil</input>
+                    <input type="checkbox" name="topping" value=""> Cherry Tomatoes </input><br>
+                    <input type="checkbox" name="topping" value=""> Arugula</input>
+                    <input type="checkbox" name="topping" value=""> Mushrooms</input>
+                    <input type="checkbox" name="topping" value=""> White truffle</input>
+                </div> -->
+
+                    <!-- Check box for cheese -->
+                    <!-- <div id="checkbox-cheeses">
+                        <h5>Dairy cheeses</h5>
+                            <input type="checkbox" name="topping" value=""> Gorgonzola Cheese </input>
+                            <input type="checkbox" name="topping" value=""> Parmegian Cheese</input>
+                            <input type="checkbox" name="topping" value=""> Burrata Cheese</input><br>
+                            <input type="checkbox" name="topping" value=""> Ricotta Cheese </input>
+                            <input type="checkbox" name="topping" value=""> Goat Cheese</input>
+                            <input type="checkbox" name="topping" value=""> Provolone Cheese</input><br>
+
+                        <h5>Dairy free cheeses</h5>
+                            <input type="checkbox" name="topping" value=""> Mozzarella </input>
+                            <input type="checkbox" name="topping" value=""> Loire Valley </input>
+                            <input type="checkbox" name="topping" value=""> MT. Vesuvius black ash</input><br>
+                            <input type="checkbox" name="topping" value=""> Winter Truffle</input>
+                            <input type="checkbox" name="topping" value=""> English Sharp Farmhouse</input>
+                            <input type="checkbox" name="topping" value=""> Gream Garlic Herb </input>
+
+                    </div> -->
+
+                    <!-- Meat toppings -->
+                <!-- <div id="chechbox-meat">
+                    <h5>Meat</h5>
+                        <input type="checkbox" name="topping" value=""> Canadian Beacon</input>
+                        <input type="checkbox" name="topping" value=""> Italian Sausage</input>
+                        <input type="checkbox" name="topping" value=""> Pepperoni</input><br>
+                        <input type="checkbox" name="topping" value=""> Salami</input>
+                        <input type="checkbox" name="topping" value=""> Prosciutto</input>
+                        <input type="checkbox" name="topping" value=""> Vermont Maple Syrup Sausage </input>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</div>
+    <div class="additional-pizzas"> -->
+
+             <!-- </div> <additional-pizzas close-->
+<!--
+</div>
+       </div> new-pizzas-section close-->
+           <!-- <div class="buttons">
+             <span id="add-pizza-button" class="btn btn-default">Add Another Pizza</span><br><br>
+             <button id="pizza-form-submit" type="submit" class="btn btn-default form-submit">Place Order</button>
+           </div>
+         </form><br><br>
+         <div class="output">
+           <h3>Order Confirmation:</h3>
+           <h4><span class="output-name"></span>, your order will be ready soon!</h4>
+           <p><span class="output-order"></span></p>
+           <p>Your order total is <span class="output-order-total"></span> dollars!</p>
+         </div> -->
+    <!-- <div class="tomato-image">
+    <img src="img/tomato.jpeg" alt="tomato photo"/>
+    </div> -->
+    <!-- </main>
+    <footer>
+    <p>Most of our ingridients are produced locally.</p>
+    <p>PH: 206-000-0000</p>
+    </footer>
+</div> -->
